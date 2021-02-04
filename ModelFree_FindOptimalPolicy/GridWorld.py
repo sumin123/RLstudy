@@ -59,9 +59,6 @@ class GridWorld():
         else:
             return False
 
-    def get_state(self):
-        return (self.x, self.y)
-
     def reset(self):
         self.x = 0
         self.y = 0

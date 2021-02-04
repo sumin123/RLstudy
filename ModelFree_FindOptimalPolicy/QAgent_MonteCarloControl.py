@@ -1,11 +1,12 @@
 import numpy as np
 import random
 
-class QAgent():
+class QAgent_MC():
     def __init__(self):
         self.q_table = np.zeros((5, 7, 4))
         self.eps = 0.9
         self.alpha = 0.01
+        self.gamma = 1.0
 
     def select_action(self, s):
         x, y = s
@@ -13,12 +14,17 @@ class QAgent():
         if coin < self.eps:
             action = random.randint(0, 3)
         else:
-            action_val = self.q_table[x,y,:]
+            action_val = self.q_table[x, y, :]
             action = np.argmax(action_val)
         return action
 
     def update_table(self, history):
-        print('a')
+        g = 0
+        for i in history[::-1]:
+            s, a, r, s_prime = i
+            x, y = s
+            self.q_table[x, y, a] = (1 - self.alpha) * self.q_table[x, y, a] + self.alpha * g
+            g = r + g * self.gamma
 
     def anneal_eps(self):
         self.eps -= 0.03
