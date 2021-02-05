@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eeb49f3-5e87-4607-bf80-29f157d7cc4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RLstudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RLstudy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/main_SARSA_QLearning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/GridWorld.py" beforeDir="false" afterPath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/GridWorld.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/QAgent_MonteCarloControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/QAgent_MonteCarloControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/QAgent_Q_Learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/QAgent_Q_Learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/QAgent_SARSA.py" beforeDir="false" afterPath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/QAgent_SARSA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/main_MC_Ctrl.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +33,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ModelFree_FindValueFunction" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ModelFree_FindOptimalPolicy" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\leesumin\PycharmProjects\RLstudy\ModelFree_FindOptimalPolicy" />
       <recent name="C:\Users\leesumin\PycharmProjects\RLstudy\ModelFree_FindValueFunction" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="GridWorld" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main_SARSA_QLearning (1)">
+    <configuration name="QAgent_SARSA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RLstudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -55,7 +55,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/GridWorld.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/QAgent_SARSA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -64,7 +64,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="QAgent_MonteCarloControl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main_MC_Ctrl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RLstudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,7 +76,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/QAgent_MonteCarloControl.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\leesumin\PycharmProjects\RLstudy\ModelFree_FindOptimalPolicy\main_MC_Ctrl.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,28 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TemporalDifference (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RLstudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ModelFree_FindValueFunction" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ModelFree_FindValueFunction/TemporalDifference.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main_SARSA_QLearning (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RLstudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +97,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ModelFree_FindOptimalPolicy/main_SARSA_QLearning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_SARSA_QLearning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RLstudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ModelFree_FindOptimalPolicy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\leesumin\PycharmProjects\RLstudy\ModelFree_FindOptimalPolicy\main_SARSA_QLearning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main_SARSA_QLearning (1)" />
+        <item itemvalue="Python.main_SARSA_QLearning" />
+        <item itemvalue="Python.QAgent_SARSA" />
+        <item itemvalue="Python.main_MC_Ctrl" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.QAgent_MonteCarloControl" />
-        <item itemvalue="Python.GridWorld" />
-        <item itemvalue="Python.TemporalDifference (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -200,45 +200,45 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612432828426" />
-    <state width="1345" height="223" key="GridCell.Tab.0.bottom" timestamp="1612446663416">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1612493362230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612446663416" />
-    <state width="1345" height="223" key="GridCell.Tab.0.center" timestamp="1612446663415">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612493362230" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1612493362230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1612446663415" />
-    <state width="1345" height="223" key="GridCell.Tab.0.left" timestamp="1612446663415">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1612493362230" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1612493362230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1612446663415" />
-    <state width="1345" height="223" key="GridCell.Tab.0.right" timestamp="1612446663415">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1612493362230" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1612493362230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1612446663415" />
-    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1612446663416">
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1612493362230" />
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1612491267199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612446663416" />
-    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1612446663416">
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612491267199" />
+    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1612491267199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1612446663416" />
-    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1612446663416">
+    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1612491267199" />
+    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1612491267199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1612446663416" />
-    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1612446663416">
+    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1612491267199" />
+    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1612491267199">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1612446663416" />
+    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1612491267199" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1612445723911">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1612445723911" />
-    <state x="375" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1612434023341">
+    <state x="375" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1612489982749">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1612434023341" />
+    <state x="375" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1612489982749" />
   </component>
 </project>
