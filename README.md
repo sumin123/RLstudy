@@ -1,5 +1,5 @@
 # Reinforcement Learning
-## Model-free
+## Model-free (tabular setting)
 ### Find Value Function
 - Monte Carlo
 - Temporal Difference (TD)
@@ -8,10 +8,13 @@
 - SARSA
 - Q Learning
 
-### Policy Gradient
+## Deep RL (non-tabular setting)
+### Value-Based
+-DQN
+
+### Policy-Based
 - REINFORCE
 
-### Actor-Critic
+### Actor-Critic (Value-based + policy-based)
 - TD Actor-Critic
 
-## DQN
