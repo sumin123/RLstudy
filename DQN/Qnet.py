@@ -16,10 +16,10 @@ class Qnet():
     def build_network(self, name):
         with tf.variable_scope(name):
             net = self.X
-            net = tf.layers.dense(net, 128, activation=tf.nn.relu)
-            net = tf.layers.dense(net, 128, activation=tf.nn.relu)
-            net = tf.layers.dense(net, self.n_action)
-            self.Q = tf.layers.dense(net, self.n_action, activation=None)
+            net = tf.layers.dense(net, 128, activation=tf.nn.relu, kernel_initializer=tf.random_normal_initializer(mean=0.0, stddev=0.02))
+            net = tf.layers.dense(net, 128, activation=tf.nn.relu, kernel_initializer=tf.random_normal_initializer(mean=0.0, stddev=0.02))
+            net = tf.layers.dense(net, self.n_action, activation=None, kernel_initializer=tf.random_normal_initializer(mean=0.0, stddev=0.02))
+            self.Q = net
             self.loss = tf.losses.mean_squared_error(self.Y, self.Q)
 
             optimizer = tf.train.AdamOptimizer(learning_rate=self.lr)
@@ -29,14 +29,11 @@ class Qnet():
         Q = self.sess.run(self.Q, feed_dict={self.X: state})
         return Q
 
-    def update(self, s, a, r, s_prime, done_mask):
-        '''
-        q = self.sample_action(s)
-        a = np.array(a)
-        q_a = np.take_along_axis(q, a, axis=1)
-        '''
-        target = r + self.gamma * np.max(self.sample_action(s_prime), axis=1) * done_mask
+    def update(self, target_net, s, a, r, s_prime, done_mask):
+        target = r + self.gamma * np.dot(np.max(target_net.sample_action(s_prime), axis=1), done_mask)
+
         q_target = self.sample_action(s)
         q_target[np.arange(len(s)), a] = target
+        print(np.shape(q_target))
 
         return self.sess.run([self.loss, self.train], feed_dict={self.X: s, self.Y: q_target})

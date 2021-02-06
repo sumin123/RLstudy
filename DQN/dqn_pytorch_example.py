@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+import numpy as np
 
 learning_rate = 0.0005
 gamma = 0.98
@@ -70,6 +71,8 @@ def train(q, q_target, memory, optimizer):
         loss.backward()
         optimizer.step()
 
+        return loss
+
 def main():
     env = gym.make('CartPole-v1')
     q = Qnet()
@@ -85,6 +88,7 @@ def main():
         eps = max(0.01, 0.08 - 0.01 * (n_epi/200))
         s = env.reset()
         done = False
+        loss = 0.0
 
         while not done:
             if is_render:
@@ -99,11 +103,11 @@ def main():
                 break
 
         if memory.size() > 2000:
-            train(q, q_target, memory, optimizer)
+            loss = train(q, q_target, memory, optimizer)
 
         if n_epi % print_interval == 0 and n_epi != 0:
             q_target.load_state_dict(q.state_dict())
-            print('epi:%s\tscore:%s\tbuffer size:%s\tepsilon:%d%%' % (n_epi, score/print_interval, memory.size(), eps*100))
+            print('epi:%s\tscore:%s\tloss:%s\tbuffer size:%s\tepsilon:%d%%' % (n_epi, score/print_interval, loss, memory.size(), eps*100))
             if score > 200.0 * print_interval:
                 is_render = True
             score = 0.0
