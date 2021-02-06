@@ -20,7 +20,7 @@
 - DQN
 
 ### 2. Policy-Based
-- REINFORCE
+- REINFORCE (policy gradient)
 
 ### 3. Actor-Critic (value-based + policy-based)
 - TD Actor-Critic
