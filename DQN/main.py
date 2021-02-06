@@ -9,6 +9,7 @@ LEARNING_RATE = 0.0001
 BUFFER_LIMIT = 50000
 BATCH_SIZE = 32
 TARGET_UPDATE_FREQ = 10
+GAMMA = 0.98
 
 
 def get_copy_var_ops(target_scope_name, src_scope_name):
@@ -24,9 +25,21 @@ def get_copy_var_ops(target_scope_name, src_scope_name):
     return op_holder
 
 
+def train(main_net, target_net, s, a, r, s_prime, done_mask):
+    X = s
+    print(done_mask)
+    target = r + GAMMA * np.max(target_net.sample_action(s_prime), axis=1) * done_mask
+    print('target')
+    print(target)
+    Y = main_net.sample_action(s)
+    for i in range(len(s)):
+        Y[i, a[i]] = target[i]
+    return main_net.update(X, Y)
+
+
 def main():
     buffer = ReplayBuffer(BUFFER_LIMIT)
-    env = gym.make('CartPole-v0')
+    env = gym.make('CartPole-v1')
     input_dim = env.observation_space.shape[0]
     action_dim = env.action_space.n
     print_interval = 20
@@ -51,7 +64,7 @@ def main():
                 s_prime, r, done, _ = env.step(a)
                 score += r
                 done_mask = 0.0 if done else 1.0
-                transition = [s, a, r/100.0, s_prime, done_mask]
+                transition = [s, a, r/100.0, s_prime, done]
                 buffer.put(transition)
                 if done:
                     break
@@ -59,7 +72,12 @@ def main():
 
             if buffer.size() > 2000:
                 s, a, r, s_prime, done_mask = buffer.sample(BATCH_SIZE)
-                loss, _ = net.update(target_net, s, a, r, s_prime, done_mask)
+                loss, _, x, y = train(net, target_net, s, a, r, s_prime, done_mask)
+                #print('Q')
+                #print(x)
+                #print('Y')
+                #print(y)
+
             if n_epi % TARGET_UPDATE_FREQ == 0:
                 sess.run(copy_ops)
             if n_epi % print_interval == 0 and n_epi != 0:
