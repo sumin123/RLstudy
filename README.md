@@ -1,9 +1,5 @@
 # Reinforcement Learning Basics
 
-##### Python 3.7
-##### tensorflow 1.15.0
-##### pytorch 1.7.1
-
 ## Model-free (tabular setting)
 ### 1. Find Value Function
 - Monte Carlo
@@ -23,4 +19,8 @@
 
 ### 3. Actor-Critic (value-based + policy-based)
 - TD Actor-Critic
-
+* * *
+##### python 3.7
+##### gym 0.18.0
+##### tensorflow 1.15.0
+##### pytorch 1.7.1
