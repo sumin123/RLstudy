@@ -1,20 +1,22 @@
 # Reinforcement Learning
+
 ## Model-free (tabular setting)
-### Find Value Function
+### 1. Find Value Function
 - Monte Carlo
 - Temporal Difference (TD)
-### Find Optimal Policy
+### 2. Find Optimal Policy
 - Monte Carlo Control
 - SARSA
 - Q Learning
 
-## Deep RL (non-tabular setting)
-### Value-Based
--DQN
 
-### Policy-Based
+## Deep RL (non-tabular setting)
+### 1. Value-Based
+- DQN
+
+### 2. Policy-Based
 - REINFORCE
 
-### Actor-Critic (Value-based + policy-based)
+### 3. Actor-Critic (value-based + policy-based)
 - TD Actor-Critic
 
