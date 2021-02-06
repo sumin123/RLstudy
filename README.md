@@ -1,4 +1,4 @@
-# Reinforcement Learning
+# Reinforcement Learning Basics
 
 ## Model-free (tabular setting)
 ### 1. Find Value Function
