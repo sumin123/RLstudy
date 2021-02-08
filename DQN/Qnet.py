@@ -24,7 +24,8 @@ class Qnet():
             self.loss = tf.losses.mean_squared_error(self.Y, self.Q)
 
             optimizer = tf.train.AdamOptimizer(learning_rate=self.lr)
-            self.train = optimizer.minimize(self.loss)
+            var = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope=name)
+            self.train = optimizer.minimize(self.loss, var_list=var)
 
     def sample_action(self, state):
         Q = self.sess.run(self.Q, feed_dict={self.X: state})

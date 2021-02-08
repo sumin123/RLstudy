@@ -1,9 +1,6 @@
 import gym
 from Policy import Policy
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
 from torch.distributions import Categorical
 
 #Hyperparameters
@@ -11,7 +8,7 @@ LEARNING_RATE = 0.0002
 GAMMA = 0.98
 
 def main():
-    env = gym.make('CartPole-v0')
+    env = gym.make('CartPole-v1')
     pi = Policy(LEARNING_RATE, GAMMA)
     score = 0.0
     print_interval = 20
