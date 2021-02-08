@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/DQN" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ActorCritic" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PolicyGradient" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PolicyGradient/REINFORCE" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PolicyGradient/PPO" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (tensorflow_v1)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

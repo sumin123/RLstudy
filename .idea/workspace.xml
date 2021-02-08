@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eeb49f3-5e87-4607-bf80-29f157d7cc4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PolicyGradient/PPO/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolicyGradient/PPO/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PolicyGradient/PPO/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RLstudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RLstudy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/DQN/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/main.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/DQN/Qnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/Qnet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolicyGradient/Policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/PolicyGradient/REINFORCE/Policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PolicyGradient/REINFORCE.py" beforeDir="false" afterPath="$PROJECT_DIR$/PolicyGradient/REINFORCE/REINFORCE.py" afterDir="false" />
+>>>>>>> 4509d556ad9f1c717c6b80f3dbb44e0319a3508f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,17 +40,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PolicyGradient/REINFORCE" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+>>>>>>> 4509d556ad9f1c717c6b80f3dbb44e0319a3508f
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leesumin\PycharmProjects\RLstudy\PolicyGradient\REINFORCE" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\leesumin\PycharmProjects\RLstudy\ModelFree_FindOptimalPolicy" />
       <recent name="C:\Users\leesumin\PycharmProjects\RLstudy\ModelFree_FindValueFunction" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="ActorCritic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main (2)">
+    <configuration name="REINFORCE" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RLstudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -48,11 +66,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ActorCritic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PolicyGradient/REINFORCE" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ActorCritic/ActorCritic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PolicyGradient/REINFORCE/REINFORCE.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RLstudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,11 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ActorCritic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PolicyGradient/PPO" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ActorCritic/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PolicyGradient/PPO/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,7 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="net" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RLstudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -132,11 +150,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ActorCritic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PolicyGradient/PPO" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ActorCritic/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PolicyGradient/PPO/net.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (2)" />
+        <item itemvalue="Python.net" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.REINFORCE" />
         <item itemvalue="Python.dqn_pytorch_example" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.ActorCritic" />
       </list>
     </recent_temporary>
   </component>
@@ -193,9 +211,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1612432406558" />
-    <state x="486" y="167" key="FileChooserDialogImpl" timestamp="1612593751375">
+    <state x="486" y="167" key="FileChooserDialogImpl" timestamp="1612765506750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+<<<<<<< HEAD
     <state x="486" y="167" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612593751375" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1612625897435">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -217,6 +236,25 @@
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1612620281466" />
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1612625897435" />
+=======
+    <state x="486" y="167" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612765506750" />
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1612792496726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612792496726" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1612792496726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1612792496726" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1612792496726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1612792496726" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1612792496726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1612792496726" />
+>>>>>>> 4509d556ad9f1c717c6b80f3dbb44e0319a3508f
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1612596735764">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -233,15 +271,23 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1612596735764" />
+<<<<<<< HEAD
     <state x="327" y="19" key="SettingsEditor" timestamp="1612624416461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1612601747877" />
     <state x="327" y="19" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1612624416461" />
     <state x="375" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1612615734144">
+=======
+    <state x="233" y="13" key="SettingsEditor" timestamp="1612769722040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1612615734144" />
+    <state x="233" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1612769722040" />
+    <state x="375" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1612764488019">
+>>>>>>> 4509d556ad9f1c717c6b80f3dbb44e0319a3508f
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="375" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1612764488019" />
     <state x="487" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612527355842">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

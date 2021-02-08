@@ -5,10 +5,10 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 #hyperparameter
-LEARNING_RATE = 0.0001
+LEARNING_RATE = 0.0005
 BUFFER_LIMIT = 50000
 BATCH_SIZE = 32
-TARGET_UPDATE_FREQ = 10
+TARGET_UPDATE_FREQ = 20
 GAMMA = 0.98
 
 
@@ -27,10 +27,7 @@ def get_copy_var_ops(target_scope_name, src_scope_name):
 
 def train(main_net, target_net, s, a, r, s_prime, done_mask):
     X = s
-    print(done_mask)
     target = r + GAMMA * np.max(target_net.sample_action(s_prime), axis=1) * done_mask
-    print('target')
-    print(target)
     Y = main_net.sample_action(s)
     for i in range(len(s)):
         Y[i, a[i]] = target[i]
@@ -64,7 +61,7 @@ def main():
                 s_prime, r, done, _ = env.step(a)
                 score += r
                 done_mask = 0.0 if done else 1.0
-                transition = [s, a, r/100.0, s_prime, done]
+                transition = [s, a, r/100.0, s_prime, done_mask]
                 buffer.put(transition)
                 if done:
                     break
@@ -73,10 +70,6 @@ def main():
             if buffer.size() > 2000:
                 s, a, r, s_prime, done_mask = buffer.sample(BATCH_SIZE)
                 loss, _, x, y = train(net, target_net, s, a, r, s_prime, done_mask)
-                #print('Q')
-                #print(x)
-                #print('Y')
-                #print(y)
 
             if n_epi % TARGET_UPDATE_FREQ == 0:
                 sess.run(copy_ops)
