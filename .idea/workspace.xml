@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3eeb49f3-5e87-4607-bf80-29f157d7cc4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN/Qnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/Qnet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN/ReplayBuffer.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/ReplayBuffer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN/dqn_pytorch_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/dqn_pytorch_example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DQN/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -200,22 +197,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="486" y="167" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612593751375" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1612620281466">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1612625897435">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612620281466" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1612620281466">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1612625897435" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1612625897435">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1612620281466" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1612620281466">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1612625897435" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1612625897435">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1612620281466" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1612620281466">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1612625897435" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1612625897435">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1612620281466" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1612625897435" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1612596735764">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -232,10 +233,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1612596735764" />
-    <state x="233" y="13" key="SettingsEditor" timestamp="1612601747877">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="327" y="19" key="SettingsEditor" timestamp="1612624416461">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1612601747877" />
+    <state x="327" y="19" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1612624416461" />
     <state x="375" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1612615734144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
