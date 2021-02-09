@@ -1,6 +1,6 @@
 import gym
 import tensorflow as tf
-from net import net
+from net import Net
 import numpy as np
 
 def main():
@@ -9,7 +9,7 @@ def main():
     roll_out = 20
     score = 0.0
     print_interval = 20
-    model = net()
+    model = Net()
     is_render = False
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
@@ -43,12 +43,11 @@ def main():
 
             for i in range(K):
                 loss = model.train(states, np.array(actions).reshape(-1), np.array(prob_a).reshape(-1), rewards, s_primes, done_masks)
-                #print(loss)
 
             if n_epi % print_interval == 0 and n_epi != 0:
                 print("episode: %s\tscore: %s" % (n_epi, score / print_interval))
                 if score > 200 * print_interval:
-                    is_render = True
+                    is_render = False
                 score = 0
 
 

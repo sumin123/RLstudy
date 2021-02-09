@@ -2,9 +2,9 @@ import tensorflow as tf
 import numpy as np
 
 
-class net():
+class Net():
     def __init__(self):
-        super(net, self).__init__()
+        super(Net, self).__init__()
         self.data = []
         self.gamma = 0.98
         self.lmbda = 0.95
@@ -13,8 +13,7 @@ class net():
         self.K = 2
 
         self.build_network('net')
-        self.build_net_train('net')
-
+        self.build_net_train()
 
     def build_network(self, name):
         ob_space = 4
@@ -34,7 +33,7 @@ class net():
 
             self.scope = tf.get_variable_scope().name
 
-    def build_net_train(self, name):
+    def build_net_train(self):
         with tf.variable_scope('train_var'):
             self.actions = tf.placeholder(dtype=tf.int32, shape=[None], name='action')
             self.rewards = tf.placeholder(dtype=tf.float32, shape=[None], name='reward')
@@ -45,12 +44,12 @@ class net():
             ratio = tf.exp(tf.log(self.action_prob_select) - tf.log(self.action_prob_old))
             clipped_ratio = tf.clip_by_value(ratio, 1 - self.eps, 1 + self.eps)
             loss_clip = tf.minimum(tf.multiply(self.gaes, ratio), tf.multiply(self.gaes, clipped_ratio))
-            loss_clip = tf.reduce_mean(loss_clip)
+            loss_clip = tf.reduce_sum(loss_clip)
 
         with tf.variable_scope('loss_v'):
             self.td_target = tf.placeholder(dtype=tf.float32, shape=[None], name='td_target')
             loss_v = tf.squared_difference(self.td_target, self.v_pred)
-            loss_v = tf.reduce_mean(loss_v)
+            loss_v = tf.reduce_sum(loss_v)
 
         with tf.variable_scope('loss'):
             self.loss = - loss_clip + 1 * loss_v
